@@ -5,6 +5,7 @@
 {
   box-sizing: border-box;
 }
+
 h1 
 {
   margin-bottom: 15px;
@@ -80,30 +81,3 @@ p
   }
   
 }
-  
-  /********** Mobile view 
-@media (max-width: 767px) 
-{
-  .col-sm-4, .col-sm-6, .col-sm-12 
-  {
-    
-    border: 1px solid black;
-    background-color: #D3D3D3;
-  }
-
-  .col-sm-4 
-  {
-    width: 33.33%;
-  }
-
-  .col-sm-6 
-  {
-    width: 50%;
-  }
-
-  .col-sm-12 
-  {
-    width: 100%;
-  }
-
-}**********/
