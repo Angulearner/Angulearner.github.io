@@ -113,8 +113,7 @@ p
 {
   border:2px solid black;
   float:right; 
-  padding-left:20px;
-  padding-right:20px;
+  width:150px;
   margin-bottom:20px;
 }
 
