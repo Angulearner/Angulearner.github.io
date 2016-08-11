@@ -108,3 +108,25 @@ p
   }
   
 }
+
+.sec-title
+{
+  border:2px solid black;
+  float:right; 
+}
+
+.sec-title1
+{
+  background-color:red;
+}
+
+.sec-title2
+{
+  background-color:white;
+}
+
+.sec-title3
+{
+  background-color:blue;
+}
+}
