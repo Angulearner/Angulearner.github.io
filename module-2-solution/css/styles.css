@@ -81,7 +81,7 @@ p
   
 }
   
-  /********** Mobile view **********/
+  /********** Mobile view 
 @media (max-width: 767px) 
 {
   .col-sm-4, .col-sm-6, .col-sm-12 
@@ -106,4 +106,4 @@ p
     width: 100%;
   }
 
-}
+}**********/
