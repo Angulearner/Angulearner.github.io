@@ -84,7 +84,7 @@ p
 
 
 /********** Mobile view **********/
-@media (min-width: 767px) 
+@media (max-width: 767px) 
 {
   .col-sm-4, .col-sm-6, .col-sm-12 
   {
