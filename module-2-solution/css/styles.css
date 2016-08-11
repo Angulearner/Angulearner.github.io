@@ -28,7 +28,7 @@ p
 /* Simple Responsive Framework. */
 .row 
 {
-  width: 100%;
+  width: 99%;
 }
 
 /********** Desktop view **********/
@@ -45,17 +45,17 @@ p
   }
   .col-lg-4 
   {
-    width: 31.33%;
+    width: 30.33%;
   }
 
   .col-lg-6 
   {
-    width: 48%;
+    width: 47%;
   }
 
   .col-lg-12 
   {
-    width: 98%;
+    width: 97%;
   }
 
 }
@@ -75,17 +75,17 @@ p
 
   .col-md-4 
   {
-    width: 31.33%;
+    width: 30.33%;
   }
 
   .col-md-6 
   {
-    width: 48%;
+    width: 47%;
   }
 
   .col-md-12 
   {
-    width: 98%;
+    width: 97%;
   }
   
 }
@@ -105,17 +105,17 @@ p
 
   .col-sm-4 
   {
-    width: 31.33%;
+    width: 30.33%;
   }
 
   .col-sm-6 
   {
-    width: 48%;
+    width: 47%;
   }
 
   .col-sm-12 
   {
-    width: 98%;
+    width: 97%;
   }
   
 }
