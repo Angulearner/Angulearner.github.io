@@ -36,7 +36,7 @@ body {
   background-color: lightBlue;
   border-radius: 0;
   border: 0;
-  height:100px;
+  /* height:100px; */
 }
 
 .navbar-brand 
@@ -49,24 +49,16 @@ body {
   font-size: 2.5em;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 0;  /* added this and 2 lines below */
+  margin-bottom: 0;
+  line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 
-/* added */
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
 
 
-/*end add */
 
 
 #nav-list {
