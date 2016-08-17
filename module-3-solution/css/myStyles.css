@@ -43,6 +43,14 @@ body {
   color:black;
 }
 
+#chicken
+{
+  color:black;
+  background-color:lightGrey;
+  border:1px solid black;
+  
+}
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
