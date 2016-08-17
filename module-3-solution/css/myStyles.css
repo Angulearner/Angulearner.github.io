@@ -54,7 +54,19 @@ body {
   text-decoration: none;
 }
 
+/* added */
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
 
+
+/*end add */
 
 
 #nav-list {
@@ -71,31 +83,6 @@ body {
 #nav-list a:hover {
   background: #E7E7E7;
 }
-
-
-
-
-/* added */
-
-#nav-list a span {
-  font-size: 1.8em;
-}
-
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div { /* We Deliver */
-  color: #557c3e;
-  text-align: right;
-  padding-right: 15px;
-}
-
-/* end add */
-
 
 
 
