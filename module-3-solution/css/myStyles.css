@@ -56,13 +56,18 @@ body {
 
 #nav-list {
   margin-top: 10px;
-  color:#008000;
-  text-align:center;
   font-size:2em;
   width:100%;
 }
 
-
+#nav-list a {
+  color: #008000;
+  text-align: center;
+  border:1px solid #008000;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar 
 {
