@@ -41,7 +41,7 @@ body {
 
 .navbar-brand 
 {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .navbar-brand h1 { /* Restaurant name */
   font-family: serif;
@@ -52,7 +52,7 @@ body {
   margin-top: 0;  /* added this and 2 lines below */
   margin-bottom: 0;
   line-height: .75;
-  padding-bottom: 20px;
+  
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
