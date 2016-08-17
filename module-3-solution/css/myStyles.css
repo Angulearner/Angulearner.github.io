@@ -54,7 +54,7 @@ body {
 .ourMenu
 {
   height: 200px;
-  text-size:2em;
+  font-size:2em;
   font-family:Arial, sans-serif;
   background-color:white;
   color:black;
