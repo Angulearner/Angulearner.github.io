@@ -13,7 +13,8 @@
   color:black;
   background-color:lightGrey;
   border:1px solid black;
-  /* position:relative; */
+  margin-left:20px;
+  margin-right:20px;
 }
 
 .chicken-header
@@ -36,6 +37,7 @@ body {
   background-color: lightBlue;
   border-radius: 0;
   border: 0;
+  min-height:150px;
 }
 
 .navbar-brand 
