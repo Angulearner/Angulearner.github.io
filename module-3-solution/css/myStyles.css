@@ -1,3 +1,28 @@
+.ourMenu
+{
+  height: 200px;
+  font-size:2em;
+  font-family:Arial, sans-serif;
+  background-color:white;
+  color:black;
+}
+
+#chicken
+{
+  color:black;
+  background-color:lightGrey;
+  border:1px solid black;
+  
+}
+
+#chickenHeader
+{
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+
+
 body {
   font-size: 16px;
   color: #fff;
@@ -34,22 +59,7 @@ body {
   color:#008000;
 }
 
-.ourMenu
-{
-  height: 200px;
-  font-size:2em;
-  font-family:Arial, sans-serif;
-  background-color:white;
-  color:black;
-}
 
-#chicken
-{
-  color:black;
-  background-color:lightGrey;
-  border:1px solid black;
-  
-}
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
