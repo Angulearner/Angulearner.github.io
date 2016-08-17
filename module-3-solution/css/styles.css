@@ -1,3 +1,28 @@
+.ourMenu
+{
+  height: 150px;
+  font-size:2em;
+  font-family:Arial, sans-serif;
+  background-color:white;
+  color:black;
+}
+
+#chicken
+{
+  color:black;
+  background-color:lightGrey;
+  border:1px solid black;
+  
+}
+
+.chicken-header
+{
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+
+
 body {
   font-size: 16px;
   color: #fff;
