@@ -43,7 +43,7 @@
   // using the 'speak' method or either helloSpeaker's or byeSpeaker's
   // 'speak' method.
   // See Lecture 50, part 1
-  for each (var key in names) 
+  for (var key in names) 
   {
     var theName = names[key];
     // STEP 11:
