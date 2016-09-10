@@ -13,7 +13,7 @@
       $scope.getMessage = function ()
       {
          var lunchText = String($scope.lunchText).trim();
-         console.log("***" + lunchText + "***" + lunchText.length);
+         console.log("***" + lunchText + "***" + lunchText.length + ":" + !lunchText);
          
          if (!lunchText)
          {   
