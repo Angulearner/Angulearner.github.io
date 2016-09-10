@@ -13,6 +13,8 @@
       $scope.getMessage = function ()
       {
          var lunchText = String($scope.lunchText).trim();
+         console.log("***" + lunchText + "***" + lunchText.length);
+         
          if (lunchText != "")
          {   
             var lunchArray = lunchText.split(",");
