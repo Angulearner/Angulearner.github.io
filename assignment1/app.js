@@ -17,7 +17,7 @@
          {   
             var lunchArray = lunchText.split(",");
             if (lunchArray.length <= 3)
-               $scope.lunchMessage = "<span style='font-color:green'>Enjoy!</span>";
+               $scope.lunchMessage = "Enjoy!";
             else
                $scope.lunchMessage = "Too much!";
         }
