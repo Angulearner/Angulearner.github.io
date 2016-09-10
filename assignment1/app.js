@@ -15,7 +15,7 @@
          var lunchText = String($scope.lunchText).trim();
          console.log("***" + lunchText + "***" + lunchText.length);
          
-         if (lunchText != "")
+         if (!lunchText)
          {   
             var lunchArray = lunchText.split(",");
             if (lunchArray.length <= 3)
