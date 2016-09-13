@@ -25,13 +25,13 @@
 <body>
 
     <div class="container">
-          <div class="row row-content" ng-controller="dishDetailController">
+          <div class="row row-content" ng-controller="dishDetailController as ctrl">
                <div class="col-xs-12">
                     <div class="media">
                          <div class="media-left media-middle">
                               <a href="#">
                               <img class="media-object img-thumbnail"
-                              src='images/uthapizza.png' alt="Why no pic?">
+                              ng-src="{{ctrl.dish.image}}" alt="Why no pic?">
                               </a>
                          </div>
       <!--                   <div class="media-body">
