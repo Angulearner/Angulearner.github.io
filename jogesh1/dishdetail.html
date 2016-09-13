@@ -48,9 +48,9 @@
 		                <li class="media" ng-repeat="comment in ctrl.dish.comments">
 		                    <div>
 		                         <blockquote>
-		                              <p>Rating: {{comment.rating}}</p>
-		                              <p>Comment: {{comment.comment}}</p>
-		                              <footer>{{comment.author}} at {{comment.date}}</footer>
+		                              <p>{{comment.rating}} Stars</p>
+		                              <p>{{comment.comment}}</p>
+		                              <footer>{{comment.author}}, {{comment.date | 'MMM. dd, yyyy'}}</footer>
 		                         </blockquote>
 		                    </div>
 		                </li>
