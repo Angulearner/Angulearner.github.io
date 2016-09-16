@@ -38,7 +38,7 @@
           <button ng-click="toBuyCtrl.buyItem($index);">Bought</button>
        </li>
      </ul>
-     <div class="emptyMessage">Everything is bought!</div>
+     <div class="emptyMessage" ng-if="toBuyCtrl.items.length == 0">Everything is bought!</div>
     </div>
 
     <!-- Already Bought List -->
