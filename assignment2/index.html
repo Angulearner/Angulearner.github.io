@@ -32,8 +32,10 @@
     <div class="col-md-6" ng-controller="ToBuyShoppingController" as toBuyCtrl>
      <h2>To Buy:</h2>
      <ul>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+       <li ng-repeat="item in toBuyCtrl.items">
+          Buy {{ item.quantity }} {{ item.name }}
+          <button ng-click="toBuyCtrl.buyItem($index);">Bought</button>
+       </li>
      </ul>
      <div class="emptyMessage">Everything is bought!</div>
     </div>
@@ -42,7 +44,9 @@
     <div class="col-md-6" ng-controller="ToBuyShoppingController" as boughtCtrl>
      <h2>Already Bought:</h2>
      <ul>
-       <li>Bought 10 cookies</li>
+       <li ng-repeat="item in boughtCtrl.items">
+         Bought {{ item.quantity }} {{ item.name }}
+       </li>
      </ul>
      <div class="emptyMessage">Nothing bought yet.</div>
     </div>
