@@ -49,9 +49,9 @@
 
       __this.buyItem = function (itemIndex) 
       {
-         var item = itemsToBuy.splice(itemIndex, 1);
+         var itemArray = itemsToBuy.splice(itemIndex, 1);
          
-         itemsBought.push(item);
+         itemsBought.push(itemArray[0]);
       };
 
       __this.getItemsToBuy = function () 
