@@ -2,7 +2,8 @@
    "use strict";
    
    angular.module('ShoppingListCheckoff', [])
-   .controller ('LunchCheckController', LunchCheckController);
+   .controller ('ToBuyShoppingController', ToBuyShoppingController)
+   .controller ('AlreadyBoughtShoppingController', AlreadyBoughtShoppingController);
    
    LunchCheckController.$inject = ['$scope'];
    function LunchCheckController ($scope)
