@@ -3,28 +3,67 @@
    
    angular.module('ShoppingListCheckoff', [])
    .controller ('ToBuyShoppingController', ToBuyShoppingController)
-   .controller ('AlreadyBoughtShoppingController', AlreadyBoughtShoppingController);
+   .controller ('AlreadyBoughtShoppingController', AlreadyBoughtShoppingController)
+   .service('ShoppingListCheckOffService', ShoppingListCheckOffService);
    
-   LunchCheckController.$inject = ['$scope'];
-   function LunchCheckController ($scope)
+   ToBuyShoppingController.$inject = ['ShoppingListCheckOffService'];
+   function ToBuyShoppingController (ShoppingListCheckOffService)
    {
-      $scope.lunchMessage = "";
+      var __this = this;
       
-      $scope.getMessage = function ()
+      __this.items = ShoppingListCheckOffService.getItemsToBuy();
+      
+      __this.buyItem = function(itemIndex)
       {
-         var lunchText = String($scope.lunchText).trim();
-         
-         if (lunchText && lunchText != "undefined")
-         {   
-            var lunchArray = lunchText.split(",");
-            if (lunchArray.length <= 3)
-               $scope.lunchMessage = "Enjoy!";
-            else
-               $scope.lunchMessage = "Too much!";
-        }
-        else
-         $scope.lunchMessage = "Please enter data first!";      
+         ShoppingListCheckOffService.buyItem(itemIndex);
       }
    
    }
+   
+   AlreadyBoughtShoppingController.$inject = ['ShoppingListCheckOffService'];
+   function AlreadyBoughtShoppingController (ShoppingListCheckOffService)
+   {
+      var __this = this;
+      
+      __this.items = ShoppingListCheckOffService.getItemsBought();
+   
+   }
+   
+   
+   function ShoppingListCheckOffService() 
+   {
+      var __this = this;
+
+      // List of items that can be bought - initialize
+      var itemsToBuy = 
+      [
+         { name: "cookies", quantity: 10 },    
+         { name: "crackers", quantity: 5 },
+         { name: "sodas", quantity: 3 },
+         { name: "pepto bottles", quantity: 2 },
+         { name: "ice cream cartons", quantity: 60 }
+      ];
+      
+      // List of items already bought 
+      var itemsBought = [];   // starts empty
+
+      __this.buyItem = function (itemIndex) 
+      {
+         var item = itemsToBuy.splice(itemIndex, 1);
+         
+         itemsBought.push(item);
+      };
+
+      __this.getItemsToBuy = function () 
+      {
+         return itemsToBuy;
+      };
+      
+      __this.getItemsBought = function ()
+      {
+         return itemsBought;
+      }
+   }
+   
+   
 })();
