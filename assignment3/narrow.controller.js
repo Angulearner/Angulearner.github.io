@@ -17,9 +17,12 @@ angular.module('NarrowItDownApp')
         promise.then(function(returnedItems)
         {
             self.found = returnedItems;
+          
+            var count = 0;
             for (item in returnedItems)
-            {
-                console.log(item.name);
+            { 
+                count++;
+                console.log ("found item " +count);
             }
           
         })
