@@ -10,7 +10,7 @@ angular.module('NarrowItDownApp')
         templateUrl: 'listFoundItems.html',
         scope: 
         {
-          found: '<',
+          foundItems: '<',
           onRemove: '&'
         },
         controller: FoundItemsController,
