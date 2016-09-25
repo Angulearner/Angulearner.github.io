@@ -20,7 +20,7 @@ angular.module('NarrowItDownApp')
             
                for (item in menuItems)
                {
-                  if (item.description.indexOf(searchTerm))
+                  if (item['description']indexOf(searchTerm))
                       narrowedItems.push(item);
                }
               // return processed items
