@@ -8,13 +8,13 @@
   </head>
 <body>
    <div class="container" ng-controller="NarrowItDownController as narrow">
-        <h1>Narrow Down Your SHIT 87 Chinese Menu Choice</h1>
+        <h1>Narrow Down Your SHIT 88 Chinese Menu Choice</h1>
 
         <div class="form-group">
-          <input type="text" placeholder="search term" class="form-control" ng-model="term">
+          <input type="text" placeholder="search term" class="form-control" ng-model="narrow.term">
         </div>
         <div class="form-group narrow-button">
-          <button class="btn btn-primary" ng-click="narrow.getMatchedItems(term)">Narrow It Down For Me!</button>
+          <button class="btn btn-primary" ng-click="narrow.findItems()">Narrow It Down For Me!</button>
 
         </div>
          <br/><br/><br/><br/>
