@@ -1,18 +1,7 @@
 (function(){
 
 angular.module('NarrowItDownApp')
-  .factory('MenuSearchFactory', MenuSearchFactory);
-  
-  
-  function MenuSearchFactory() 
-  {
-      var factory = function () 
-      {
-        return new MenuSearchService();
-      };
-
-      return factory;
-  }
+  .service('MenuSearchService', MenuSearchService);
   
    function MenuSearchService ()
    {
