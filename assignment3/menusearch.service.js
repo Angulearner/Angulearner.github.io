@@ -4,7 +4,7 @@ angular.module('NarrowItDownApp')
   .service('MenuSearchService', MenuSearchService);
   
   MenuSearchService.$inject = ['$http'];
-   function MenuSearchService ()
+   function MenuSearchService ($http)
    {
      self = this;
       self.getMatchedMenuItems = function (searchTerm)
