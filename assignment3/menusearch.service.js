@@ -11,7 +11,7 @@ angular.module('NarrowItDownApp')
       {
           var promise = $http.get('https://davids-restaurant.herokuapp.com/menu_items.json'); 
          
-          promise.then(function (result) 
+          return promise.then(function (result) 
           {
                 // process result and only keep items that match
                 var foundItems = result; // todo finish this!
