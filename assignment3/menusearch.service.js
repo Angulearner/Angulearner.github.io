@@ -14,21 +14,23 @@ angular.module('NarrowItDownApp')
             {
                 // process result and only keep items that match
                 var foundItems = result.data; 
-            
+              console.log("search term = " + searchTerm);
                var menuItems = foundItems.menu_items;
                var narrowedItems = [];
                 var count = 1;
                for (var i=0; i<menuItems.length; i++)
                {  
                  var item = menuItems[i];
-                 console.log(i + "   " + item);
+                 
                  
                  if (item["description"].indexOf(searchTerm) != -1)
+                 {  console.log(i + "   " + item);
                       narrowedItems.push(item);
+                 }
                }
               // return processed items
               
-              return narrowedItems;
+              return menuItems;
             
           }).catch(function(error) { console.log ("problem!!");  });   
         
