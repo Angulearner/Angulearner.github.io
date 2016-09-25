@@ -16,7 +16,7 @@ angular.module('NarrowItDownApp')
                 var foundItems = result.data; // todo finish this!
 
               // return processed items
-              console.log("found items = " + foundItems.menu_items;
+              console.log("found items = " + foundItems.menu_items);
               return foundItems;
           }).catch(function(error) { console.log ("problem!!");  });   
         
