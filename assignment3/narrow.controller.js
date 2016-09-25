@@ -22,8 +22,10 @@ angular.module('NarrowItDownApp')
             for (item in returnedItems)
             { 
                 count++;
-                console.log ("found item " +count + " with name " + item['name']);
+                console.log ("found item " +count + " which is " + returnedItems[0]);
             }
+          
+          console.log(self.found);
           
         })
           
