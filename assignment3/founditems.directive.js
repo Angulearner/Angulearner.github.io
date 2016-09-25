@@ -7,7 +7,11 @@ angular.module('NarrowItDownApp')
   {
       var ddo =  
       {
-          templateUrl: 'listFoundItems.html'
+          scope: 
+        {
+          found: '<';
+        },
+        templateUrl: 'listFoundItems.html'
       };
     
       return ddo;
