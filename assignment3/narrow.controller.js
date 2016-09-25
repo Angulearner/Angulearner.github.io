@@ -12,7 +12,7 @@ angular.module('NarrowItDownApp')
      
       self.getMatchedItems = function()
       {
-        // self.found = MenuSearchService.getMatchedMenuItems(); 
+        self.found = MenuSearchService.getMatchedMenuItems(); 
         
       }
       
