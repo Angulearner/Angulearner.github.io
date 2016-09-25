@@ -10,7 +10,7 @@ angular.module('NarrowItDownApp')
         return $http
         ({ 
             method: 'GET',
-            url: 'http://davids-restaurant.herokuapp.com/menu_items.json'
+            url: 'https://davids-restaurant.herokuapp.com/menu_items.json'
         })
         .then(function (result) 
         {
