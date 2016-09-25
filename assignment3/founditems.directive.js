@@ -27,10 +27,10 @@ angular.module('NarrowItDownApp')
   {
         var fiCtrl = this;
 
-        fiCtrl.remove = function(myIndex) 
-        {
-           fiCtrl.onRemove({ index: myIndex})
-        };
+   //     fiCtrl.remove = function(myIndex) 
+   //     {
+   //        fiCtrl.onRemove({ index: myIndex})
+   //     };
     
   }
   
