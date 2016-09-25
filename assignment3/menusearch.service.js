@@ -9,7 +9,7 @@ angular.module('NarrowItDownApp')
      self = this;
       self.getMatchedMenuItems = function (searchTerm)
       {
-          var promise = $http ('https://davids-restaurant.herokuapp.com/menu_items.json'); 
+          var promise = $http.get('https://davids-restaurant.herokuapp.com/menu_items.json'); 
          
           promise.then(function (result) 
           {
