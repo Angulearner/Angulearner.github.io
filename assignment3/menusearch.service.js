@@ -7,15 +7,14 @@ angular.module('NarrowItDownApp')
    {
       function getMatchedMenuItems(searchTerm)
       {
-        return $http
-        ({ 
+        $http ({ 
             method: 'GET',
             url: 'https://davids-restaurant.herokuapp.com/menu_items.json'
         })
         .then(function (result) 
         {
               // process result and only keep items that match
-              var foundItems; // todo finish this!
+              var foundItems = result; // todo finish this!
 
             // return processed items
             return foundItems;
