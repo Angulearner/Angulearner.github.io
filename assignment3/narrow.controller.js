@@ -18,7 +18,7 @@ angular.module('NarrowItDownApp')
         {
             self.found = returnedItems;
             console.log ("returned items = " + returnedItems);
-          console.log ("returned items.data = " + returnedItems.data);
+          
         })
           
       }
