@@ -9,6 +9,7 @@ angular.module('NarrowItDownApp')
       {
           scope: 
         {
+          list: '=myList',
           found: '<'
         },
         templateUrl: 'listFoundItems.html'
