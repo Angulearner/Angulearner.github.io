@@ -13,11 +13,20 @@ angular.module('NarrowItDownApp')
             .then(function (result) 
             {
                 // process result and only keep items that match
-                var foundItems = result.data; // todo finish this!
-
+                var foundItems = result.data; 
+            
+               var menuItems = foundItems.menu_items;
+               var narrowedItems = {};
+            
+               for (item in menuItems)
+               {
+                  if (item.description.indexOf(searchTerm))
+                      narrowedItems.push(item);
+               }
               // return processed items
-              console.log("found items = " + foundItems.menu_items);
-              return foundItems.menu_items;
+              
+              return narrowedItems;
+            
           }).catch(function(error) { console.log ("problem!!");  });   
         
        
