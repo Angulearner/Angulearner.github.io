@@ -12,8 +12,13 @@ angular.module('NarrowItDownApp')
      
       self.getMatchedItems = function()
       {
-        self.found = MenuSearchService.getMatchedMenuItems(); 
-        
+        var promise = MenuSearchService.getMatchedMenuItems(); 
+        console.log (promise);
+        promise.then(function(returnedItems)
+        {
+            self.found = returnedItems;
+        }
+          
       }
       
       self.onRemove = function(index)
