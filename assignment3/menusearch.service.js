@@ -10,15 +10,19 @@ angular.module('NarrowItDownApp')
       self.getMatchedMenuItems = function (searchTerm)
       {
           var promise = $http.get('https://davids-restaurant.herokuapp.com/menu_items.json'); 
+        
+          console.log("promise = " + promise);
          
-          return promise.then(function (result) 
+          var result = promise.then(function (result) 
           {
                 // process result and only keep items that match
                 var foundItems = result; // todo finish this!
 
               // return processed items
+              console.log("found items = " + foundItems);
               return foundItems;
-          }).catch(function(error) { console.log ("problem!!");  });           
+          }).catch(function(error) { console.log ("problem!!");  });   
+        
        
       } 
       
