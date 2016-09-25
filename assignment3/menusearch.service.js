@@ -16,7 +16,7 @@ angular.module('NarrowItDownApp')
           var result = promise.then(function (result) 
           {
                 // process result and only keep items that match
-                var foundItems = result; // todo finish this!
+                var foundItems = result.data; // todo finish this!
 
               // return processed items
               console.log("found items = " + foundItems);
