@@ -18,12 +18,18 @@ angular.module('NarrowItDownApp')
         {
             self.found = returnedItems;
           
-            var count = 0;
-            for (item in returnedItems)
-            { 
-                count++;
-                console.log ("found item " +count + " which is " + returnedItems[0]);
-            }
+        //    var count = 0;
+        //    for (item in returnedItems)
+        //    { 
+        //        count++;
+                console.log ("first item is " + returnedItems[0]);
+          
+             for (var key in returnedItems[0])
+             {
+                console.log (key + " -->  "  + returnedItems[0][key]); 
+             }
+                
+        //    }
           
           console.log(self.found);
           
