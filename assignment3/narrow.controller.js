@@ -38,7 +38,7 @@ angular.module('NarrowItDownApp')
           
       }
       
-      self.onRemove = function(index)
+      self.removeItem = function(index)
       {
            self.found.splice(index, 1);
       }
