@@ -15,6 +15,11 @@ angular.module('NarrowItDownApp')
         self.found = MenuSearchService.getMatchedMenuItems(); 
         
       }
+      
+      self.onRemove = function(index)
+      {
+           self.found.splice(index, 1);
+      }
    }
 
 
