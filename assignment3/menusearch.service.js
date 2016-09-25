@@ -3,10 +3,11 @@
 angular.module('NarrowItDownApp')
   .service('MenuSearchService', MenuSearchService);
   
+  MenuSearchService.$inject = ['$http'];
    function MenuSearchService ()
    {
      self = this;
-    /*  self.getMatchedMenuItems = function (searchTerm)
+      self.getMatchedMenuItems = function (searchTerm)
       {
           var promise = $http ('https://davids-restaurant.herokuapp.com/menu_items.json'); 
          
@@ -19,7 +20,7 @@ angular.module('NarrowItDownApp')
               return foundItems;
           }).catch(function(error) { console.log ("problem!!");  });           
        
-      } */
+      } 
       
    }
 
