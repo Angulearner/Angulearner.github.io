@@ -1,14 +1,25 @@
 (function(){
 
 angular.module('NarrowItDownApp')
-  .service('MenuSearchService');
+  .factory('MenuSearchFactory', MenuSearchFactory);
+  
+  
+  function MenuSearchFactory() 
+  {
+      var factory = function () 
+      {
+        return new MenuSearchService();
+      };
+
+      return factory;
+  }
   
    function MenuSearchService ()
    {
      self = this;
-      self.getMatchedMenuItems = function (searchTerm)
+    /*  self.getMatchedMenuItems = function (searchTerm)
       {
-    /*      var promise = $http ('https://davids-restaurant.herokuapp.com/menu_items.json'); 
+          var promise = $http ('https://davids-restaurant.herokuapp.com/menu_items.json'); 
          
           promise.then(function (result) 
           {
@@ -17,9 +28,9 @@ angular.module('NarrowItDownApp')
 
               // return processed items
               return foundItems;
-          }).catch(function(error) { console.log ("problem!!");  });       */    
+          }).catch(function(error) { console.log ("problem!!");  });           
        
-      }
+      } */
       
    }
 
