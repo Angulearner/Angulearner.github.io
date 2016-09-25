@@ -1,7 +1,7 @@
 <!-- <h3>Title: {{ $ctrl.myTitle }}</h3> -->
 <ol>
   <li ng-repeat="item in $ctrl.found">
-    {{ item.name }}
+    {{ item.name }}, {{item.short_name}}, {{item.description}}
     <button ng-click="$ctrl.remove($index);">Remove Item</button>
   </li>
 </ol>
