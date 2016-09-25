@@ -9,6 +9,10 @@ angular.module('NarrowItDownApp')
    {
       var self = this;
      
+     self.remove = function() 
+     {
+       
+     }
       
    }
 
