@@ -9,15 +9,28 @@ angular.module('NarrowItDownApp')
       {
           scope: 
         {
-          found: '<myList'
+          found: '<myList',
+          onRemove: '&'
         },
         controller: FoundItemsController,
         bindToController: true,
-        controllerAs: 'myCtrl',
+        controllerAs: 'fiCtrl',
         templateUrl: 'listFoundItems.html'
       };
     
       return ddo;
+  }
+  
+  FoundItemsController.$inject=[];
+  function FoundItemsController()
+  {
+        var fiCtrl = this;
+
+        fiCtrl.remove = function(myIndex) 
+        {
+           fiCtrl.onRemove({ index: myIndex})
+        }
+    
   }
   
   /*
