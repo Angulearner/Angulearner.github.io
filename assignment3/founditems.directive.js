@@ -13,8 +13,8 @@ angular.module('NarrowItDownApp')
           foundList: '<',
           onRemove: '&'
         },
-       // controller: FoundItemsController,
-        bindToController: true,
+     //   controller: FoundItemsController,
+     //   bindToController: true,
         controllerAs: 'fiCtrl'
         
       };
