@@ -5,7 +5,7 @@ angular.module('NarrowItDownApp')
   
    function MenuSearchService ()
    {
-      function getMatchedMenuItems(searchTerm)
+      getMatchedMenuItems = function (searchTerm)
       {
           var promise = $http ('https://davids-restaurant.herokuapp.com/menu_items.json'); 
          
