@@ -17,7 +17,7 @@ angular.module('NarrowItDownApp')
         promise.then(function(returnedItems)
         {
             self.found = returnedItems;
-        }
+        })
           
       }
       
