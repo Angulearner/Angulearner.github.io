@@ -9,9 +9,9 @@ angular.module('NarrowItDownApp')
    {
       var self = this;
      
-     self.remove = function() 
+     self.remove = function(myIndex) 
      {
-       
+       self.onRemove({ index: myIndex})
      }
       
    }
