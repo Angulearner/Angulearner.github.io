@@ -9,7 +9,7 @@ angular.module('NarrowItDownApp')
    {
       var self = this;
       self.found = {};
-     
+  /*   
       self.getMatchedItems = function()
       {
         // self.found = MenuSearchService.getMatchedMenuItems(); 
@@ -20,6 +20,7 @@ angular.module('NarrowItDownApp')
       {
            self.found.splice(index, 1);
       }
+    */
    }
 
 
