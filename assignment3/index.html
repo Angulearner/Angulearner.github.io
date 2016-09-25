@@ -8,7 +8,7 @@
   </head>
 <body>
    <div class="container" ng-controller="NarrowItDownController as narrow">
-        <h1>Narrow Down Your SHIT55 Chinese Menu Choice</h1>
+        <h1>Narrow Down Your SHIT56 Chinese Menu Choice</h1>
 
         <div class="form-group">
           <input type="text" placeholder="search term" class="form-control">
@@ -20,6 +20,14 @@
          <br/><br/><br/><br/>
         <div>
           <found-items my-list="narrow.found"></found-items>
+        </div>
+        <div>
+          <ol>
+                <li ng-repeat="item in narrow.found">
+                  <button>Remove Item</button>
+                </li>
+              </ol>
+              <div class="error" ng-show="narrow.found.length == 0">Nothing found.</div>
         </div>
 
   </div>
