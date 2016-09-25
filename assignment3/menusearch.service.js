@@ -21,12 +21,13 @@ angular.module('NarrowItDownApp')
                 var count = 1;
                if (searchTerm && searchTerm != "")
                {
+                    var term=searchTerm.toLowerCase();
                    for (var i=0; i<menuItems.length; i++)
                    {  
                      var item = menuItems[i];
 
 
-                     if (item["description"].indexOf(searchTerm) != -1)
+                     if (item["description"].toLowerCase().indexOf(term) != -1)
                      {  console.log(i + "   " + item);
                           narrowedItems.push(item);
                      }
