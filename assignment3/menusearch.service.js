@@ -28,7 +28,7 @@ angular.module('NarrowItDownApp')
 
 
                      if (item["description"].toLowerCase().indexOf(term) != -1)
-                     {  console.log(i + "   " + item);
+                     {  
                           narrowedItems.push(item);
                      }
                    }
