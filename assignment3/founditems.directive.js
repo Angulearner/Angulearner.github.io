@@ -11,6 +11,9 @@ angular.module('NarrowItDownApp')
         {
           found: '<myList'
         },
+        controller: FoundItemsController,
+        bindToController: true,
+        controllerAs: 'myCtrl',
         templateUrl: 'listFoundItems.html'
       };
     
