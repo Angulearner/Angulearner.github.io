@@ -14,7 +14,7 @@ angular.module('NarrowItDownApp')
             {
                 // process result and only keep items that match
                 var foundItems = result.data; 
-              console.log("search term = " + searchTerm);
+              
                
                var menuItems = foundItems.menu_items;
                var narrowedItems = [];
