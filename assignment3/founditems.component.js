@@ -12,7 +12,17 @@ angular.module('NarrowItDownApp')
       }
     });
 
-
+   FoundItemsComponentController.$inject = [];
+   function FoundItemsComponentController ()
+   {
+      var self = this;
+     
+     self.remove = function(myIndex) 
+     {
+       self.onRemove({ index: myIndex})
+     }
+      
+   }
 
 
 
