@@ -30,7 +30,7 @@ angular.module('NarrowItDownApp')
                }
               // return processed items
               
-              return menuItems;
+              return narrowedItems;
             
           }).catch(function(error) { console.log ("problem!!");  });   
         
