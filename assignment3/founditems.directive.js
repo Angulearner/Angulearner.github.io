@@ -7,11 +7,11 @@ angular.module('NarrowItDownApp')
   {
       var ddo =  
       {
-    //      scope: 
-    //    {
-    //      found: '<myList',
-    //      onRemove: '&'
-    //    },
+          scope: 
+        {
+          found: '<myList',
+          onRemove: '&'
+        },
         controller: FoundItemsController,
         bindToController: true,
         controllerAs: 'fiCtrl',
