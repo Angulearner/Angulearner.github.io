@@ -9,10 +9,16 @@ angular.module('NarrowItDownApp')
    {
       var self = this;
       self.found = {};
+      self.term = "";
      
-      self.getMatchedItems = function()
+      self.findItems = function()
       {
-        var promise = MenuSearchService.getMatchedMenuItems(); 
+         self.getMatchedItems(self.term);
+      }
+     
+      self.getMatchedItems = function(searchTerm)
+      {
+        var promise = MenuSearchService.getMatchedMenuItems(searchTerm); 
         console.log ("promise returned from service = " + promise);
         promise.then(function(returnedItems)
         {
