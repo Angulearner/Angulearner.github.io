@@ -1,21 +1,22 @@
 (function(){
 
 angular.module('NarrowItDownApp')
-  .directive('foundItems', foundItems);
+  .directive('foundItems', foundItemsDirective);
   
-  function foundItems()
+  function foundItemsDirective()
   {
       var ddo =  
       {
-          scope: 
+        templateUrl: 'listFoundItems.html',
+        scope: 
         {
           found: '<',
           onRemove: '&'
         },
         controller: FoundItemsController,
         bindToController: true,
-        controllerAs: 'fiCtrl',
-        templateUrl: 'listFoundItems.html'
+        controllerAs: 'fiCtrl'
+        
       };
     
       return ddo;
@@ -29,7 +30,7 @@ angular.module('NarrowItDownApp')
         fiCtrl.remove = function(myIndex) 
         {
            fiCtrl.onRemove({ index: myIndex})
-        }
+        };
     
   }
   
