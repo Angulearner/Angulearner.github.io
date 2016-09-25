@@ -9,7 +9,7 @@ angular.module('NarrowItDownApp')
       {
           scope: 
         {
-          found: '<myList',
+          test: '<myList',
           onRemove: '&'
         },
         controller: FoundItemsController,
