@@ -22,11 +22,12 @@ angular.module('NarrowItDownApp')
         //    for (item in returnedItems)
         //    { 
         //        count++;
-                console.log ("first item is " + returnedItems[0]);
+                var item = returnedItems[0];
+                console.log ("first item is " + item);
           
-             for (var key in returnedItems[0])
+             for (var key in item)
              {
-                console.log (key + " -->  "  + returnedItems[0][key]); 
+                console.log (key + " -->  "  + item[key]); 
              }
                 
         //    }
