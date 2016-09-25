@@ -13,7 +13,7 @@ angular.module('NarrowItDownApp')
           foundList: '<',
           onRemove: '&'
         },
-        controller: FoundItemsController,
+       // controller: FoundItemsController,
         bindToController: true,
         controllerAs: 'fiCtrl'
         
@@ -22,17 +22,17 @@ angular.module('NarrowItDownApp')
       return ddo;
   }
   
-  FoundItemsController.$inject=[];
-  function FoundItemsController()
-  {
-        var fiCtrl = this;
+//  FoundItemsController.$inject=[];
+//  function FoundItemsController()
+//  {
+//        var fiCtrl = this;
 
    //     fiCtrl.remove = function(myIndex) 
    //     {
    //        fiCtrl.onRemove({ index: myIndex})
    //     };
     
-  }
+//  }
   
   /*
     {
