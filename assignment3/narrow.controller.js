@@ -22,7 +22,7 @@ angular.module('NarrowItDownApp')
             for (item in returnedItems)
             { 
                 count++;
-                console.log ("found item " +count);
+                console.log ("found item " +count + " with name " + item.name);
             }
           
         })
