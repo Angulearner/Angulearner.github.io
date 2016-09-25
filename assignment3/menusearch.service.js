@@ -15,7 +15,7 @@ angular.module('NarrowItDownApp')
                 // process result and only keep items that match
                 var foundItems = result.data; 
             
-               var menuItems = foundItems.menu_items;
+               var menuItems = foundItems.menu_items[0];
                var narrowedItems = {};
                 var count = 1;
                for (var item in menuItems)
