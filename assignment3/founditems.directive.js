@@ -14,7 +14,7 @@ angular.module('NarrowItDownApp')
           onRemove: '&'
         },
      //   controller: FoundItemsController,
-     //   bindToController: true,
+        bindToController: true,
         controllerAs: 'fiCtrl'
         
       };
