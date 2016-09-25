@@ -4,8 +4,8 @@ angular.module('NarrowItDownApp')
   .controller('NarrowItDownController', NarrowItDownController);
   
   
-   NarrowItDownController.$inject = ['MenuSearchService'];
-   function NarrowItDownController (MenuSearchService)
+   NarrowItDownController.$inject = ['MenuSearchFactory'];
+   function NarrowItDownController (MenuSearchFactory)
    {
       var self = this;
       self.found = {};
