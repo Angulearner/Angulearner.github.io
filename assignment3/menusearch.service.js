@@ -18,9 +18,9 @@ angular.module('NarrowItDownApp')
                var menuItems = foundItems.menu_items;
                var narrowedItems = {};
             
-               for (item in menuItems)
+               for (var item in menuItems)
                {
-                  if (item['description'].indexOf(searchTerm))
+                  if (item["description"].indexOf(searchTerm))
                       narrowedItems.push(item);
                }
               // return processed items
