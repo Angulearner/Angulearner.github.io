@@ -254,6 +254,8 @@ angular.module('confusionApp')
             {
                 return leadership[index];
             }
+            
+            return corpfac;
      
             // Implement two functions, one named getLeaders,
             // the other named getLeader(index)
