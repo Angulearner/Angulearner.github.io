@@ -14,7 +14,7 @@ angular.module('confusionApp', ['ui.router'])
                     'content': {
                         templateUrl : 'views/home.html',
                         controller  : 'IndexController',
-                        controllerAs: 'IdxCtrl'
+                        controllerAs: 'idxCtrl'
                     },
                     'footer': {
                         templateUrl : 'views/footer.html',
