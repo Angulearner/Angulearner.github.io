@@ -197,7 +197,7 @@ angular.module('confusionApp')
                     return dishes[index];
                 };
 
-                this.getPromotion(index)
+                this.getPromotion = function(index)
                 {
                   return promotions[index];
                 }
