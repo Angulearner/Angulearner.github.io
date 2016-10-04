@@ -39,7 +39,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   
   
     .state('menuItems', {
-    url: '/menu-items/{categoryId}',
+    url: '/menu-items/{categoryShortName}',
     templateUrl: '/templates/menu-items.template.html',
     controller: 'MenuItemsController as itemDetail',
     resolve: {
@@ -47,7 +47,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
          ['$stateParams', 'MenuDataService',
             function ($stateParams, MenuDataService) 
             {
-              return MenuDataService.getItemsForCategory($stateParams.categoryId);
+              return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
               //  .then(function (items) {
               //    return items.data;
               // });
