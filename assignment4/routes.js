@@ -24,10 +24,10 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     url: '/categories',
     templateUrl: 'templates/categories.html',
     controller: 'CategoriesController as catCtrl',
-    resolve: {
-      items: ['MenuDataService', function (MenuDataService) {
-        return MenuDataService.getAllCategories();
-      }]
+//    resolve: {
+//      items: ['MenuDataService', function (MenuDataService) {
+//        return MenuDataService.getAllCategories();
+//      }]
     }
   });
 }
