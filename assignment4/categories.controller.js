@@ -2,15 +2,15 @@
 'use strict';
 
 angular.module('MenuApp')
-.controller('CategoriesController', CategoriesController);
+.controller('MainCategoriesController', MainCategoriesController);
 
 
 // categories is injected through state's resolve
-CategoriesController.$inject = ['categories'];
-function CategoriesController(categories) {
+MainCategoriesController.$inject = ['items'];
+function CategoriesController(items) {
 // function CategoriesController() {
   var self = this;
-  self.items = categories;
+  self.items = items;
 
 }
 
