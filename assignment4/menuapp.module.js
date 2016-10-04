@@ -1,5 +1,5 @@
 (function(){
   
-  angular.module("menuApp", ['data']);  
+  angular.module('menuApp', ['data']);  
   
 })();
