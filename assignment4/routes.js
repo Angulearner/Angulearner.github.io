@@ -24,7 +24,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('mainCategoriesList', {
     url: '/main_categories',
     templateUrl: 'templates/main-categories.html',
-    controller: 'MainCategoriesController as catCtrl',
+    controller: 'MainCategoriesController as mainCatCtrl',
 
     resolve: {
       items: 
