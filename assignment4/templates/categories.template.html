@@ -1,8 +1,9 @@
   
-  What the fuck can't I register a change in this fucking file????? 4<br/> 
+  File version 5<br/> 
 
 <ul>
   <li ng-repeat="cat in $ctrl.items.data">
+    ui-sref="itemDetail({itemId: $index})"
     {{ cat['short_name'] }},  {{ cat.name }}
   </li>
 </ul>
