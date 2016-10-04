@@ -8,7 +8,7 @@ angular.module('MenuApp')
 // categories is injected through state's resolve
 CategoriesController.$inject = ['categories'];
 function CategoriesController(categories) {
-function CategoriesController() {
+// function CategoriesController() {
   var self = this;
   self.categories = categories;
 
