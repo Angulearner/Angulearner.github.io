@@ -1,9 +1,9 @@
   
-  File version 6<br/> 
+  File version 7<br/> 
 
 <ul>
   <li ng-repeat="cat in $ctrl.items.data">
-    ui-sref="menuItems({itemId: $index})"
+    ui-sref="menuItems({categoryId: $index})"
     {{ cat['short_name'] }},  {{ cat.name }}
   </li>
 </ul>
