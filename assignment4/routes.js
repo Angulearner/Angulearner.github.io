@@ -22,7 +22,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Categories page
   .state('categories', {
     url: '/categories',
-    templateUrl: 'templates/categories.template.html',
+    templateUrl: 'templates/categories.html',
     controller: 'CategoriesController as catCtrl',
     resolve: {
       items: ['MenuDataService', function (MenuDataService) {
