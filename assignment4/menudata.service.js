@@ -10,7 +10,10 @@
     
     self.getAllCategories = function()
     {
-        return $http.get('https://davids-restaurant.herokuapp.com/categories.json');
+        console.log("Here we are trying to get all the categories!!!");
+        var promise =  $http.get('https://davids-restaurant.herokuapp.com/categories.json');
+        console.log ("our promise is " + promise);
+        return promise; 
     };
     
     self.getItemsForCategory = function(categoryShortName)
