@@ -10,7 +10,7 @@ CategoriesController.$inject = ['categories'];
 function CategoriesController(categories) {
 // function CategoriesController() {
   var self = this;
-  self.categories = categories;
+  self.items = categories;
 
 }
 
