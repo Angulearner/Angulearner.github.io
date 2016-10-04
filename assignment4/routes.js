@@ -25,10 +25,10 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     templateUrl: 'templates/categories.html',
     controller: 'CategoriesController as catCtrl',
    resolve: {
-      items: 
+      categories: 
         ['MenuDataService', 
               function (MenuDataService) 
-              {
+              {   console.log ("In routes, trying to resolve so we can go to Categories page!!!");
                   return MenuDataService.getAllCategories();
               }
         ]
