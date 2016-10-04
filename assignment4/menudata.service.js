@@ -1,6 +1,6 @@
 (function(){
   
-  angular.module('MenuData')
+  angular.module('MenuApp')
     .service('menuDataService', MenuDataService);
   
   MenuDataService.$inject = ['$http'];
