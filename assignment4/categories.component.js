@@ -6,7 +6,7 @@
         templateUrl: 'templates/categories.template.html',
         bindings:
         {
-            categories: '<'
+            items: '<'
         }
     });
   
