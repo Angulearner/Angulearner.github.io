@@ -23,9 +23,9 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('categories', {
     url: '/categories',
     templateUrl: 'templates/categories.html',
-    controller: 'CategoriesController as catCtrl'
-/*
-   ,resolve: {
+    controller: 'CategoriesController as catCtrl',
+
+    resolve: {
       categories: 
         ['MenuDataService', 
               function (MenuDataService) 
@@ -33,7 +33,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
                   return MenuDataService.getAllCategories();
               }
         ]
-    } */
+    } 
   });
 }
 
