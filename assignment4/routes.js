@@ -21,13 +21,13 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   })
 
   // Categories page
-  .state('categories', {
-    url: '/categories',
-    templateUrl: 'templates/categories.html',
-    controller: 'CategoriesController as catCtrl',
+  .state('mainCategoriesList', {
+    url: '/main_categories',
+    templateUrl: 'templates/main-categories.html',
+    controller: 'MainCategoriesController as catCtrl',
 
     resolve: {
-      categories: 
+      items: 
         ['MenuDataService', 
               function (MenuDataService) 
               {   console.log ("In routes, trying to resolve so we can go to Categories page!!!");
