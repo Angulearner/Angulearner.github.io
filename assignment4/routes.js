@@ -35,7 +35,27 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
               }
         ]
     } 
+  })
+  
+  
+    .state('menuItems', {
+    url: '/menu-items/{categoryShortNum}',
+    templateUrl: '/templates/menu-items.template.html',
+    controller: 'MenuItemsController as itemDetail',
+    resolve: {
+      items: ['$stateParams', 'MenuDataService',
+            function ($stateParams, MenuDataService) {
+              return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
+              //  .then(function (items) {
+              //    return items.data;
+                });
+            }]
+    }
   });
+  
+  
+  
+  
 }
 
 })();
