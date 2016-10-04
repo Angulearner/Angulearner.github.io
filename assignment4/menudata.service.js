@@ -8,6 +8,8 @@
   {
     self = this;
     
+    console.log("menuDataService is here!!!!!");
+    
     self.getAllCategories = function()
     {
         console.log("Here we are trying to get all the categories!!!");
