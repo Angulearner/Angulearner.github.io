@@ -1,7 +1,6 @@
 (function () {
 'use strict';
-  
-  console.log ("What the fuck, can we see anything????");
+ 
 
 angular.module('MenuApp')
 .config(RoutesConfig);
