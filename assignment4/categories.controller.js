@@ -5,12 +5,12 @@ angular.module('MenuApp')
 .controller('CategoriesController', CategoriesController);
 
 
-// MainShoppingListController.$inject = ['ShoppingListService'];
-// function MainShoppingListController(ShoppingListService) {
-CategoriesController.$inject = ['categories'];
-function CategoriesController(categories) {
+// categories is injected through state's resolve
+//CategoriesController.$inject = ['categories'];
+// function CategoriesController(categories) {
+function CategoriesController() {
   var self = this;
-  self.categories = categories;
+  // self.categories = categories;
 
 }
 
