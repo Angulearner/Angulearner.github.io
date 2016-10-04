@@ -30,7 +30,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       items: 
         ['MenuDataService', 
               function (MenuDataService) 
-              {   console.log ("In routes, trying to resolve so we can go to Categories page!!!");
+              {   
                   return MenuDataService.getAllCategories();
               }
         ]
@@ -39,17 +39,20 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   
   
     .state('menuItems', {
-    url: '/menu-items/{categoryShortNum}',
+    url: '/menu-items/{categoryId}',
     templateUrl: '/templates/menu-items.template.html',
     controller: 'MenuItemsController as itemDetail',
     resolve: {
-      items: ['$stateParams', 'MenuDataService',
-            function ($stateParams, MenuDataService) {
-              return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
+      items: 
+         ['$stateParams', 'MenuDataService',
+            function ($stateParams, MenuDataService) 
+            {
+              return MenuDataService.getItemsForCategory($stateParams.categoryId);
               //  .then(function (items) {
               //    return items.data;
-                });
-            }]
+              // });
+            }
+        ]
     }
   });
   
