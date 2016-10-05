@@ -6,7 +6,7 @@
         templateUrl: 'templates/menu-items.template.html',
         bindings:
         {
-            menuItems: '<'
+            items: '<'
         }
     });
   
