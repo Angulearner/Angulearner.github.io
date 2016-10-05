@@ -1,7 +1,7 @@
 (function(){
   
   angular.module('MenuApp')
-    .component('items', 
+    .component('itemsDirective', 
     {
         templateUrl: 'templates/menu-items.template.html',
         bindings:
