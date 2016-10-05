@@ -22,7 +22,7 @@
         var url = "https://davids-restaurant.herokuapp.com/menu_items.json?category=" + categoryShortName;
       
         var prom =  $http.get(url);
-        for each (x in prom)
+        for (var x in prom)
         {
             console.log(x);
         }
