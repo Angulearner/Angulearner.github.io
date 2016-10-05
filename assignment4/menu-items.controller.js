@@ -10,12 +10,7 @@ function MenuItemsController(items)
 {
     var self = this;
     self.items = items;
-    self.category = "X";
-  
-    self.setCategory = function(cat)
-   {
-     self.category = cat; 
-   }
+
 }
 
 })();
