@@ -6,9 +6,16 @@ angular.module('MenuApp')
 
 // 'item' is injected through state's resolve
 MenuItemsController.$inject = ['items'];
-function MenuItemsController(items) {
-  var self = this;
-  self.items = items;
+function MenuItemsController(items) 
+{
+    var self = this;
+    self.items = items;
+    self.category = "";
+  
+    self.setCategory = function(cat)
+    {
+      self.category = cat; 
+    }
 }
 
 })();
