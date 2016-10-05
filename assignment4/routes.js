@@ -47,17 +47,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
          ['$stateParams', 'MenuDataService',
             function ($stateParams, MenuDataService) 
             {
-             // controller.setCategory($stateParams.categoryShortName);
-             var x= 1;
               return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
-           //   .then(function(items)
-           //  {
-           //    console.log ("response.data = " + response.data);
-           //    console.log ("response.data.menu_items = " + response.data.menu_items); 
-           //   });
-              //  .then(function (items) {
-              //    return items.data;
-              // });
+ 
             }
         ]
     }
