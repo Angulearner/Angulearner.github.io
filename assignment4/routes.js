@@ -40,14 +40,19 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   
     .state('menuItems', {
     url: '/menu-items/{categoryShortName}',
-    templateUrl: 'templates/menu-items.template.html',
-    controller: 'MenuItemsController as itemDetail',
+    templateUrl: 'templates/main-items.template.html',
+    controller: 'MenuItemsController as mainItemCtrl',
     resolve: {
       items: 
          ['$stateParams', 'MenuDataService',
             function ($stateParams, MenuDataService) 
             {
               return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
+           //   .then(function(items)
+           //  {
+           //    console.log ("response.data = " + response.data);
+           //    console.log ("response.data.menu_items = " + response.data.menu_items); 
+           //   });
               //  .then(function (items) {
               //    return items.data;
               // });
