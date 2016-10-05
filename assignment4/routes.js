@@ -44,10 +44,10 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     controller: 'MenuItemsController as mainItemCtrl',
     resolve: {
       items: 
-         ['$stateParams', 'MenuDataService', 'MenuItemsController',
-            function ($stateParams, MenuDataService, MenuItemsController) 
+         ['$stateParams', 'MenuDataService',
+            function ($stateParams, MenuDataService) 
             {
-              // MenuItemsController.setCategory($stateParams.categoryShortName);
+              mainItemCtrl.setCategory($stateParams.categoryShortName);
               return MenuDataService.getItemsForCategory($stateParams.categoryShortName);
            //   .then(function(items)
            //  {
