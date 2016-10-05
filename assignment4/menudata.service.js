@@ -8,21 +8,31 @@
   {
     self = this;
     
-    console.log("menuDataService is here!!!!!");
-    
     self.getAllCategories = function()
     {
-        console.log("Here we are trying to get all the categories!!!");
         var promise =  $http.get('https://davids-restaurant.herokuapp.com/categories.json');
-        console.log ("our promise is " + promise);
+        
         return promise; 
     };
     
     self.getItemsForCategory = function(categoryShortName)
     {
+        console.log ("getting items for category " + categoryShortName);
+      
         var url = "https://davids-restaurant.herokuapp.com/menu_items.json?category=" + categoryShortName;
       
-        return $http.get(url);
+        var prom =  $http.get(url);
+        console.log ("our promise is " + prom);
+
+      
+        prom.then()
+        {
+            console.log ("promise.data = " + prom.data);
+            console.log ("promise.data.menu_items = " + prom.data.menu_items);   
+        }
+      
+        return prom;
+      
       
     };
     
