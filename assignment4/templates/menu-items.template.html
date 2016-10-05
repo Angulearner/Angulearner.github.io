@@ -1,13 +1,18 @@
-Page version #2 !!!!
+Page version #3 !!!!
 
 <a ui-sref="home">Home</a> &lt;
 <a ui-sref="mainCategoriesList">Categories</a>
 
 <script>
-  console.log("$ctrl.items = " + $ctrl.items);
-    console.log("$ctrl.items.data = " + $ctrl.items.data);
-    console.log("$ctrl.items.data.menu_items = " + $ctrl.items.data.menu_items);
+    var logIt = function
+    {
+      console.log("$ctrl.items = " + $ctrl.items);
+      console.log("$ctrl.items.data = " + $ctrl.items.data);
+      console.log("$ctrl.items.data.menu_items = " + $ctrl.items.data.menu_items);
+    }
 </script>
+
+<input id="clickMe" type="button" value="clickme" onclick="logIt();" />
 
 <ul>
   <li ng-repeat="menuItem in $ctrl.items.data.menu_items">
