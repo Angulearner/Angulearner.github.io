@@ -22,17 +22,6 @@
         var url = "https://davids-restaurant.herokuapp.com/menu_items.json?category=" + categoryShortName;
       
         var prom =  $http.get(url);
-        console.log ("our promise is " + prom);
-
-      
-        prom.then(function(response)
-        {
-            console.log ("response.data = " + response.data);
-            console.log ("response.data.menu_items = " + response.data.menu_items); 
-        });
-       
-  
-        
       
         return prom;
       
