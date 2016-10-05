@@ -25,11 +25,14 @@
         console.log ("our promise is " + prom);
 
       
-        prom.then()
+        prom.then(function(response)
         {
-            console.log ("promise.data = " + prom.data);
-            console.log ("promise.data.menu_items = " + prom.data.menu_items);   
-        }
+            console.log ("response.data = " + response.data);
+            console.log ("response.data.menu_items = " + response.data.menu_items); 
+        });
+       
+  
+        
       
         return prom;
       
